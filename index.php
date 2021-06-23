@@ -33,7 +33,7 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
 </head>
 <body>
 <h1>
-
+    Snack 4
     <?php 
         /*
             Snack 4
@@ -54,6 +54,34 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
             }
         }
         var_dump($arr);
+
+    ?>
+
+</h1>
+
+<h1>
+    Snack 5
+    
+    <?php  
+    /*
+      Snack 5
+      Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.
+    */
+
+    $str = 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum maiores reprehenderit rerum aliquid sequi. In sapiente eveniet esse mollitia aspernatur.';
+    //voglamo spezzetare tra i punti per avere un array che poi possiamo ciclare e stampare i vari p
+
+    // per spezzare la stringa uso explode
+
+    $sentences = explode('.', $str);
+    var_dump($sentences);
+
+    for ($i=0; $i < count($sentences); $i++) { //se voglio ignorare il punto finale il quale mi da una stringa pari a zero, nel count faccio -1
+        # code...
+        $sentence = $sentences[$i];
+        var_dump($sentence);
+        echo '<p>' . $sentence . '<p>';
+    }
 
     ?>
 
