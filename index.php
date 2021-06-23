@@ -81,6 +81,12 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
         $sentence = $sentences[$i];
         var_dump($sentence);
         echo '<p>' . $sentence . '<p>';
+
+        // se il count è maggiore di 1 è vero se è -1 è falso
+        if ($sentence) {
+            # code...
+            echo '<p>' . $sentence . '.<p>';
+        }
     }
 
     ?>
