@@ -167,6 +167,69 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
 
 </h1>
 
+<h1>
+    Snack 1
+    
+    <?php  
+    /*
+      Snack 1
+        Creiamo un array contenente le partite di basket di un’ipotetica tappa del calendario. Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla  squadra di casa e punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con questo schema.
+        Olimpia Milano - Cantù | 55-60
+    */
+       $db = [
+           [
+               'team1' => 'milano',
+               'team2' => 'torino',
+               'score1' => 30,
+               'score2' => 25,
+           ],
+           [
+                'team1' => 'trento',
+                'team2' => 'bolzano',
+                'score1' => 50,
+                'score2' => 20,
+            ],
+            [
+                'team1' => 'bologna',
+                'team2' => 'empoli',
+                'score1' => 10,
+                'score2' => 22,
+            ],
+        ];
+        // ciclo tutte le partite
+        var_dump($db);
+        for ($i=0; $i < count($db); $i++) { 
+            # code...
+            $match = $db[1];
+            var_dump($match);
+            echo '<br><br>';//voglio vedere lemento per elemento
+
+            // stampiamo a schermo le nostre partite
+
+            echo 'team 1:' . $match['team1'] . '<br>'
+                . 'team 2: ' . $match['team2'] . '<br>'
+                . 'score 1: ' . $match['score1'] . '<br>'
+                . 'score 2: ' . $match['score2'] . '<br><hr>';
+
+        }
+    ?>
+
+</h1>
+
+<h1>
+    Snack 2
+    
+    <?php  
+    /*
+      Snack 2
+        Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
+    */
+        
+    ?>
+
+</h1>
+
+
     
 </body>
 </html>
